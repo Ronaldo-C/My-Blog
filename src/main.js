@@ -3,6 +3,14 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './assets/font/iconfont.css'
+import { Icon, Dropdown, DropdownMenu, DropdownItem } from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
+
+Vue.use(Icon)
+Vue.use(Dropdown)
+Vue.use(DropdownMenu)
+Vue.use(DropdownItem)
 
 Vue.config.productionTip = false
 
