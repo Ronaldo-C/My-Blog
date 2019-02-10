@@ -14,28 +14,38 @@
       >改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气</div>
     </div>
     <div class="content">
-      <div class="pic">
-        <div class="title">改革春风吹满地，中国人民真争气</div>
+      <div class="topBox">
+        <div class="title">改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气</div>
+        <div class="fontIcon">
+          <i class="el-icon-date"><span>2019-01-27</span></i>
+          <i class="iconfont icon-yonghu"><span>Admin</span></i>
+          <i class="iconfont icon-fenlei"><span>技术博客</span></i>
+        </div>
       </div>
       <div
-        class="container"
+        class="bottomBox"
       >改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气</div>
     </div>
     <div class="content">
-      <div class="pic">
-        <div class="title">改革春风吹满地，中国人民真争气</div>
+      <div class="topBox">
+        <div class="title">改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气</div>
+        <div class="fontIcon">
+          <i class="el-icon-date"><span>2019-01-27</span></i>
+          <i class="iconfont icon-yonghu"><span>Admin</span></i>
+          <i class="iconfont icon-fenlei"><span>技术博客</span></i>
+        </div>
       </div>
       <div
-        class="container"
+        class="bottomBox"
       >改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气改革春风吹满地，中国人民真争气</div>
     </div>
-    <div class="pagine">
-      <i class="el-icon-arrow-left"/>
-      1/6
-      <i class="el-icon-arrow-right"/>
-    </div>
-    <div class="goTop">
-      <i class="el-icon-caret-top"/>
+    <div class="block">
+      <el-pagination
+        :page-size=3
+        :pager-count=5
+        layout="prev, pager, next"
+        :total="50">
+      </el-pagination>
     </div>
   </div>
 </template>
@@ -96,26 +106,10 @@ export default {
       }
     }
   }
-  .pagine {
-    margin: 20px auto 0;
-    padding-bottom: 50px;
-    width: 40%;
-    text-align: center;
-    font-size: 18px;
-    color: #c5c1aa;
-    i {
-      font-size: 18px;
-      cursor: pointer;
-    }
-  }
-  .goTop {
-    position: fixed;
-    bottom: 60px;
-    right: 25%;
-    i {
-      font-size: 26px;
-      color: #bdbdbd;
-    }
+  .block {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
   }
 }
 </style>

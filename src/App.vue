@@ -18,7 +18,12 @@
         </el-dropdown-menu>
       </el-dropdown>
     </div>
-    <router-view/>
+    <div class="article">
+      <router-view/>
+    </div>
+    <div class="goTop">
+      <i class="el-icon-caret-top"/>
+    </div>
   </div>
 </template>
 
@@ -69,6 +74,25 @@ export default {
       .menu {
         font-size: 22px;
       }
+    }
+  }
+  .goTop {
+    position: fixed;
+    bottom: 60px;
+    right: 5%;
+    i {
+      font-size: 26px;
+      color: skyblue;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .article {
+      width: 100%;
+    }
+  }
+  @media screen and (min-width: 900px) {
+    .article {
+      width: 50%;
     }
   }
 }
