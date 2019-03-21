@@ -14,6 +14,7 @@ Vue.use(DropdownItem)
 Vue.use(Pagination)
 
 Vue.config.productionTip = false
+Vue.prototype.router = router
 
 /* eslint-disable no-new */
 new Vue({

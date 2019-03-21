@@ -19,7 +19,7 @@
       </el-dropdown>
     </div>
     <div class="article">
-      <router-view/>
+      <router-view class="article-content"/>
     </div>
     <div class="goTop">
       <i class="el-icon-caret-top"/>
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  name: "App"
+  name: "App",
 };
 </script>
 
@@ -92,7 +92,12 @@ export default {
   }
   @media screen and (min-width: 900px) {
     .article {
-      width: 50%;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      .article-content {
+        width: 50%;
+      }
     }
   }
 }

@@ -55,9 +55,12 @@ export default {
   name: "Index",
   data() {
     return {
-      msg: "Welcome to Your Vue.js App"
-    };
-  }
+      
+    }
+  },
+  methods: {
+    
+  },
 };
 </script>
 
@@ -65,45 +68,44 @@ export default {
 <style lang="scss" scoped>
 .container {
   margin-top: 20px;
-  @media screen and (max-width: 900px) {
-    .content {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      margin: 10px 20px 20px 20px;
-      padding: 20px;
-      box-sizing: border-box;
-      color: #3c3c3c;
-      .topBox {
-        text-align: center;
-        margin-bottom: 20px;
-        .title {
-          overflow: hidden;
-          text-overflow: ellipsis;
-          white-space: nowrap;
-          margin-bottom: 10px;
-          font-size: 20px;
-        }
-        .fontIcon {
-          font-size: 14px;
-          line-height: 14px;
-          display: flex;
-          justify-content: space-around;
-          span {
-            padding-left: 6px;
-          }
+  .content {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    margin: 10px 20px 20px 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    color: #3c3c3c;
+    cursor: pointer;
+    .topBox {
+      text-align: center;
+      margin-bottom: 20px;
+      .title {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        margin-bottom: 10px;
+        font-size: 20px;
+      }
+      .fontIcon {
+        font-size: 14px;
+        line-height: 14px;
+        display: flex;
+        justify-content: space-around;
+        span {
+          padding-left: 6px;
         }
       }
-      .bottomBox {
-        text-indent: 30px;
-        font-size: 16px;
-        display: -webkit-box;
-        text-overflow: ellipsis;
-        overflow : hidden;
-        text-overflow: ellipsis;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        -webkit-box-orient: vertical;
-      }
+    }
+    .bottomBox {
+      text-indent: 30px;
+      font-size: 16px;
+      display: -webkit-box;
+      text-overflow: ellipsis;
+      overflow : hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
     }
   }
   .block {
